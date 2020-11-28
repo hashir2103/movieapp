@@ -16,7 +16,7 @@ class _GenresScreenState extends State<GenresScreen>{
   @override
   void initState() {
     super.initState();
-    genresBloc..getGenres();
+    genresBloc.getGenres();
     
   }
 

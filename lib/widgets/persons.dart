@@ -1,12 +1,6 @@
-import 'dart:convert';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:movieapp/bloc/get_movies_bloc.dart';
 import 'package:movieapp/bloc/get_persons_bloc.dart';
-import 'package:movieapp/model/movie.dart';
-import 'package:movieapp/model/movie_response.dart';
 import 'package:movieapp/model/person.dart';
 import 'package:movieapp/model/person_response.dart';
 import 'package:movieapp/style/theme.dart' as Style;
@@ -21,7 +15,7 @@ class _PersonsListState extends State<PersonsList> {
   @override
   void initState() {
     super.initState();
-    personsBloc..getPersons();
+    personsBloc.getPersons();
   }
 
   @override

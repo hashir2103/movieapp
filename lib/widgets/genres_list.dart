@@ -23,7 +23,7 @@ class _GenresListState extends State<GenresList> with SingleTickerProviderStateM
     _tabController = TabController(vsync: this, length: genres.length);
     _tabController.addListener(() {
         if (_tabController.indexIsChanging) {
-          moviesByGenreBloc..drainStream();
+          moviesByGenreBloc.drainStream();
         }
       });
   }

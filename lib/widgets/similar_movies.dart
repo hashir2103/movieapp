@@ -19,11 +19,11 @@ class _SimilarMoviesState extends State<SimilarMovies> {
   @override
   void initState() {
     super.initState();
-    similarMoviesBloc..getSimilarMovies(id);
+    similarMoviesBloc.getSimilarMovies(id);
   }
   @override
  void dispose() {
-   similarMoviesBloc..drainStream();
+   similarMoviesBloc.drainStream();
    super.dispose();
  }
 

@@ -19,7 +19,7 @@ class _NowPlayingState extends State<NowPlaying> {
   @override
   void initState() {
     super.initState();
-    nowPlayingMoviesBloc..getMovies();
+    nowPlayingMoviesBloc.getMovies();
   }
 
   @override
@@ -100,7 +100,7 @@ class _NowPlayingState extends State<NowPlaying> {
   indicatorColor: Style.Colors.titleColor,
   indicatorSelectorColor: Style.Colors.secondColor,
   shape: IndicatorShape.circle(size: 5.0),
-          pageView: PageView.builder(
+          child: PageView.builder(
               controller: pageController,
               scrollDirection: Axis.horizontal,
               itemCount: movies.take(5).length,
